@@ -43,6 +43,7 @@ public class TopologicalSorting {
 		
 		System.out.println(resList);
 		
+		
 	}
 
 static List<Integer> sortInTopo(List<TopoNode> aList) {
@@ -60,7 +61,7 @@ static List<Integer> sortInTopo(List<TopoNode> aList) {
 
 }
 
-static void sortTopological(TopoNode aNode, Set tempVisit, List resultList) {
+static void sortTopological(TopoNode aNode, Set<Integer> tempVisit, List<Integer> resultList) {
 	
 	if (!aNode.visited) { 
 		tempVisit.add(aNode.data);
